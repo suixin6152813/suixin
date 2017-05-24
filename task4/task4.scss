@@ -1,0 +1,79 @@
+$bac: #5ac0ce;
+$text-color:#ffffff;
+$left: 0;
+$right: 0;
+$top: 0;
+@mixin left{
+  float: left;
+}
+@mixin right{
+  float: right;
+}
+@mixin pandm{
+  padding: 0;
+  margin: 0;
+}
+@mixin header-fix($left,$right,$top,$bac,$text-color){
+  position: fixed;
+  left: $left;  top: $top;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin input-easy{
+  height: 3rem;
+  border-style: none;
+  outline:none;
+}
+body{
+  @include pandm;
+  background-color: aliceblue;
+}
+header{
+  @include header-fix(0,0,0,$bac,$text-color);
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0.7rem 1rem;
+  h2{
+    @include pandm;
+    font-size: 1.2rem;
+  }
+  a{
+    color: $text-color;
+    text-decoration: none;
+    cursor: pointer;
+  }
+}
+form{
+  margin-top: 4rem;
+  div{
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    input{
+      width: 60%;
+      @include input-easy;
+    }
+    img{
+      width: 3.6rem;
+      vertical-align: middle;
+      margin:0 1rem;
+    }
+  }
+}
+form>input{
+  width: 100%;
+  background-color: $bac;
+  font-size: 1.2rem;
+  color:$text-color;
+  @include input-easy;
+}
+.login-text{
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: right;
+  color: $bac;
+  text-decoration: none;
+}

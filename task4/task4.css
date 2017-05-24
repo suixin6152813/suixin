@@ -1,0 +1,60 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: aliceblue; }
+
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #5ac0ce;
+  color: #ffffff;
+  text-align: center;
+  vertical-align: middle;
+  height: 2rem;
+  line-height: 2rem;
+  padding: 0.7rem 1rem; }
+  header h2 {
+    padding: 0;
+    margin: 0;
+    font-size: 1.2rem; }
+  header a {
+    color: #ffffff;
+    text-decoration: none;
+    cursor: pointer; }
+
+form {
+  margin-top: 4rem; }
+  form div {
+    background-color: white;
+    width: 100%;
+    margin-bottom: 0.5rem; }
+    form div input {
+      width: 60%;
+      height: 3rem;
+      border-style: none;
+      outline: none; }
+    form div img {
+      width: 3.6rem;
+      vertical-align: middle;
+      margin: 0 1rem; }
+
+form > input {
+  width: 100%;
+  background-color: #5ac0ce;
+  font-size: 1.2rem;
+  color: #ffffff;
+  height: 3rem;
+  border-style: none;
+  outline: none; }
+
+.login-text {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  text-align: right;
+  color: #5ac0ce;
+  text-decoration: none; }
+
+/*# sourceMappingURL=task4.css.map */
