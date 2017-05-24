@@ -1,0 +1,156 @@
+/*#theme*/
+$bac: #08C2F6;
+$text-color:#ffffff;
+$left: 0;
+$right: 0;
+$top: 0;
+$bottom:0;
+@mixin left{
+  float: left;
+}
+@mixin right{
+  float: right;
+}
+@mixin pandm{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  font-size: 2rem;
+}
+@mixin header-fix($left,$right,$top,$bac,$text-color){
+  position: fixed;
+  left: $left;  top: $top;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin footer-fix($left,$right,$bottom,$bac,$text-color){
+  position: fixed;
+  left: $left;  bottom: $bottom;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin footer-container{
+    flex:1;
+    width: 45%;
+    height: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: 0.3rem;
+    text-align: center;
+    cursor: pointer;
+    border:0.2rem solid #08C2F6;
+}
+@mixin input-easy{
+  height: 5rem;
+  border-style: none;
+  outline:none;
+}
+@mixin ab-middle{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+/*#base*/
+html{
+  font-size: 62.5%;
+  color: #fff;
+}
+body,header,header span,main,.background-pic,.information p,.user-form-list{
+  @include pandm;
+}
+/*#layout*/
+header{
+  @include header-fix(0,0,0,$bac,$text-color);
+  padding: 1rem 0;
+  height: 3rem;
+  line-height: 3rem;
+  .header-box{
+    width: 97%;
+    margin: auto;
+  }
+  span{
+    text-align: center;
+  }
+  .pull-left {
+    float: left;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 1.8rem;
+    color: #fff;
+  }
+}
+
+footer{
+  @include footer-fix(0,0,0,#fff,$text-color);
+  display: flex;
+  padding:1rem ;
+  height: 5rem;
+  .footer-left{
+    @include footer-container;
+    color: $bac;
+    margin-right: 1.5rem;
+  }
+  .footer-right{
+    @include footer-container;
+    background-color:$bac;
+  }
+}
+main {
+  margin: 5rem 0 5rem 0;
+  .background-pic {
+    position: relative;
+    height: 15rem;
+    background-image: url("3.jpg");
+    background-size: cover;
+    .tou {
+      @include ab-middle;
+      width: 8rem;
+      margin: 0 1rem;
+    }
+    .information {
+      margin: 0 0 0 11rem;
+      @include ab-middle;
+    }
+  }
+  .user-form{
+    color: #0f0f0f;
+    ul{
+      font-size: 1.5rem;
+      li{
+        position: relative;
+        padding: 1rem;
+        min-height: 3rem;
+        line-height: 3rem;
+        border-bottom: 1px solid #ccc;
+        div{
+          display: inline-block;
+        }
+        span {
+          padding: 0 0 0 1rem;
+          border-left: 3px solid #5fc0cd;
+        }
+        .text-important {
+          margin-left: 8rem;
+          color: #e26163;
+        }
+        .user-form-tag {
+          padding: 0 1.5rem;
+          background: url("4.png") no-repeat left center;
+          background-size: 1.2rem;
+        }
+        .user-form-lable {
+          @include ab-middle;
+          border-right: 1px solid #ccc;
+          color: #aaa;
+          padding: 0 1.2rem 0 0;
+        }
+        .user-form-item {
+          margin: 0 8rem;
+        }
+      }
+    }
+  }
+}
