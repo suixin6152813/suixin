@@ -1,0 +1,38 @@
+html{font-size:62.5%}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+  .big{
+    font-size:4rem;
+  }
+  .pull-left{
+    width: 4rem;
+  }
+  .pull-right{
+    width: 3rem;
+  }
+}
+
+body,header,footer{width: 100%;color: #fff}
+
+body,.box{position: relative;}
+
+.box{
+  background-color: #ffffff;
+}
+body{
+  min-width: 320px;
+  max-width: 768px;
+  margin:auto;
+  font-size: 3rem;
+}
+.main-header{
+  top: 10rem;
+  width: 80%;
+  background-color:#08C2F6;
+  color: #ffffff;
+  font-size: 1.8rem;
+  margin-top: 10rem;
+  padding: 5% 10% 1% 10%;
+}

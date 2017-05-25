@@ -1,0 +1,32 @@
+html {
+  font-size: 62.5%; }
+
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 40%; } }
+body, header, main, footer {
+  width: 100%; }
+
+body, .container {
+  position: relative; }
+
+body {
+  min-width: 320px;
+  max-width: 768px;
+  margin: auto; }
+
+.box7 {
+  background-color: #f0f0f0; }
+
+header {
+  background-color: #08C2F6; }
+
+footer {
+  padding: 1.5% 0; }
+
+.chosegame {
+  width: 90%;
+  background-color: #ffffff;
+  margin: 5%; }
+
+/*# sourceMappingURL=themes.css.map */

@@ -1,0 +1,154 @@
+@charset "UTF-8";
+$float:left;
+$marginT:0;
+$marginR:0;
+$marginB:0;
+$marginL:0;
+@mixin ab-middle{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+@mixin chose-item($float){
+  float: $float;
+  width:20%;
+  padding: 10% 0;
+  background-size:cover;
+  margin-right: 6.7%;
+}
+@mixin header-fix($left,$right,$top,$bac,$text-color){
+  position: fixed;
+  left: $left;  top: $top;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin footer-fix($left,$right,$bottom,$bac,$text-color){
+  position: fixed;
+  left: $left;  bottom: $bottom;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin pull($float,$marginT,$marginR,$marginB,$marginL){
+  float: $float;
+  margin: $marginT $marginR $marginB $marginL;
+}
+/*header部分*/
+.pull-center{
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  margin: 0;
+}
+.pull-left{
+  @include pull(left,0,0,0,2rem);
+}
+.pull-right{
+  @include pull(right,0.2rem,2rem,0,0);
+}
+.pull-right2{
+  @include pull(right,1.5rem,1.3rem,0,0);
+}
+.main-header{
+  @include header-fix(0,0,10rem,#b9e9f5,#0f0f0f);
+  max-width: 768px;
+  height: 8rem;
+  line-height: 8rem;
+  font-size: 2rem;
+  margin: auto;
+  z-index: 1000;
+}
+.main-header p{
+  margin: 0 0 0 2rem;
+}
+/*三角形*/
+.triangle{
+  position: fixed;
+  top: 18rem;
+  border-left: 1rem solid transparent;
+  border-top: 1rem solid #b9e9f5;
+  border-right: 1rem solid transparent;
+  margin-left: 5rem;
+  z-index: 1000;
+}
+/*主体部分*/
+.text{
+  font-size: 1.8rem;
+  padding: 3rem 0 ;
+  margin: 0;
+}
+.item-box{
+  width: 100%;
+  background-color: #ffffff;
+  padding:2%;
+  text-align: center;
+}
+.name{
+  background-color: #f5c97b;
+  font-size: 2rem;
+  padding-top: 70%;
+}
+.number{
+  background-color: #83b09a;
+  font-size: 1.5rem;
+  padding-top: 30%;
+}
+.item-box span{
+  @include ab-middle;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+}
+/*footer部分*/
+footer{
+  @include footer-fix(0,0,0,#08c2f6,#fff);
+  max-width: 768px;
+  margin: auto;
+  z-index: 1000;
+  text-align: center;
+  a{
+    color: #fff;
+  }
+}
+.btn{
+  display: block;
+  text-decoration: none;
+  background-color: #fbb435;
+  margin:4% auto;
+  width: 70%;
+  padding: 2% 0 ;
+  vertical-align: middle;
+  border: 0 none;
+  cursor: pointer;
+  font-size: 3rem;
+}
+/*下拉选项*/
+.chose-box{
+  padding: 20% 0;
+  width: 100%;
+}
+.chose{
+  padding: 10% 0;
+  width: 100%;
+  display: none;
+  .chose-item1{
+    background: url("5.png");
+    @include chose-item(left);
+  }
+  .chose-item2{
+    background: url("6.png");
+    @include chose-item(left);
+  }
+  .chose-item3{
+    background: url("7.png");
+    @include chose-item(left);
+  }
+  .chose-item4{
+    background: url("8.png");
+    @include chose-item(right);
+    margin-right: -2%;
+  }
+}
+

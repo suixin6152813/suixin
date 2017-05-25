@@ -1,0 +1,197 @@
+html{font-size:62.5%}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 40%;
+    }
+}
+.box{
+    position: relative;
+    background-color:#08C2F6;
+}
+body{
+    position: relative;
+    min-width: 320px;
+    max-width: 768px;
+    margin:auto;
+    font-size: 3rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    background-color: #08C2F6;
+    max-width: 768px;
+    z-index: 1000;
+}
+.pull-center{
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    color: #ffffff;
+    margin: 0;
+}
+.pull-left{
+    margin:0 0 0 2rem;
+    float: left;
+}
+.pull-right{
+    margin:0.2rem 2rem 0 0;
+    float: right;
+}
+.pull-right2{
+    margin:1.5rem 1.3rem 0 0;
+    float: right;
+}
+.main-header{
+    position: fixed;
+    top: 10rem;
+    width: 100%;
+    max-width: 768px;
+    height: 8rem;
+    line-height: 8rem;
+    background-color: #b9e9f5;
+    color: #0f0f0f;
+    font-size: 2rem;
+    margin: 0;
+    z-index: 1000;
+}
+.main-header p{
+    margin: 0 0 0 2rem;
+}
+.triangle{
+    position: fixed;
+    top: 18rem;
+    width: 0;
+    height: 0;
+    border-left: 1rem solid transparent;
+    border-top: 1rem solid #b9e9f5;
+    border-right: 1rem solid transparent;
+    margin-left: 5rem;
+    z-index: 1000;
+}
+.main-box{
+    margin:18rem 0 17% 0;
+    padding-left: 4%;
+}
+.text{
+    font-size: 1.8rem;
+    padding: 3rem 0 ;
+    color: #ffffff;
+    margin: 0;
+}
+.item-box{
+    width: 100%;
+    background-color: #ffffff;
+    padding:2%;
+    text-align: center;
+
+}
+
+.clear{
+    clear: both;
+}
+.name{
+    background-color: #f5c97b;
+    position: relative;
+    font-size: 2rem;
+    padding-top: 70%;
+}
+.number{
+    background-color: #83b09a;
+    position: relative;
+    font-size: 1.5rem;
+    padding-top: 30%;
+}
+.item-box span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    white-space: nowrap;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #08C2F6;
+    max-width: 768px;
+    z-index: 1000;
+    text-align: center;
+}
+.btn{
+    display: block;
+    text-decoration: none;
+    background-color: #fbb435;
+    color: #ffffff;
+    margin:4% auto;
+    width: 70%;
+    padding: 2% 0 ;
+    vertical-align: middle;
+    border: 0 none;
+    cursor: pointer;
+    font-size: 3rem;
+}
+.contain{
+    width: 25%;
+    float: left;
+    margin: 0 10% 0 0;
+}
+.contain1{
+    width: 25%;
+    float: left;
+    margin: 0 ;
+}
+.chose-box{
+    padding: 20% 0;
+    width: 100%;
+}
+.chose{
+    padding: 10% 0;
+    width: 100%;
+    display: none;
+}
+.chose-item1{
+    float: left;
+    width:20%;
+    padding: 10% 0;
+    background: url("5.png");
+    background-size:cover;
+    margin-right: 6.7%;
+}
+.chose-item2{
+    float: left;
+    width: 20%;
+    padding: 10% 0;
+    margin-right: 6.7%;
+    background: url("6.png");
+    background-size:cover;
+}
+.chose-item3{
+    float: left;
+    width: 20%;
+    padding: 10% 0;
+    margin-right: 6.6%;
+    background: url("7.png");
+    background-size:cover;
+}
+.chose-item4{
+    float: right;
+    width: 20%;
+    padding: 10% 0;
+    background: url("8.png");
+    background-size:cover;
+    margin-right: -2%;
+}
+.contain:hover .chose{
+     display: block;
+ }
+.contain:hover .chose-box{
+    padding: 0;
+}
+.contain1:hover .chose{
+    display: block;
+}
+.contain1:hover .chose-box{
+    padding: 0;
+}

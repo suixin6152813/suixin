@@ -1,0 +1,144 @@
+html{font-size:62.5%}
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 40%;
+    }
+    .big{
+        font-size:4rem;
+    }
+    .pull-left{
+        width: 4rem;
+    }
+    .pull-right{
+        width: 3rem;
+    }
+}
+.box{
+    position: relative;
+    background-color: #ffffff;
+}
+body{
+    position: relative;
+    min-width: 320px;
+    max-width: 768px;
+    margin:auto;
+    font-size: 3rem;
+}
+header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 10rem;
+    margin: auto;
+    background-color: #08C2F6;
+    max-width: 768px;
+    z-index: 1000;
+    border-bottom: solid 1px #fff;
+}
+.pull-center{
+    text-align: center;
+    padding: 3rem 0 3rem 0;
+    color: #ffffff;
+    margin: 0;
+}
+.pull-left{
+    margin:0 0 0 2rem;
+    float: left;
+}
+.pull-right{
+    margin:0.2rem 2rem 0 0;
+    float: right;
+}
+.main-header{
+    top: 10rem;
+    width: 80%;
+    background-color:#08C2F6;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin-top: 10rem;
+    padding: 5% 10% 1% 10%;
+}
+.victory span{
+    font-size: 4rem;
+}
+.yellow{
+    color: #ffc865;
+    font-size: 3rem;
+    margin-bottom: 5rem;
+}
+.form-list{
+    margin:0 0 17% 0;
+    padding: 0 0 0 10%;
+}
+.list-item{
+    border-bottom: solid 1px #8c8c8c;
+    list-style:none;
+    padding-top: 1%;
+}
+.list-item span{
+    float: right;
+    color: #8c8c8c;
+    font-size: 1.5rem;
+    margin: 2% 10%;
+}
+.miaoshu{
+    color: #8c8c8c;
+    font-size: 2rem;
+    padding: 2% 0 3% 0;
+}
+.miaoshu p{
+    margin: 1% 0;
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding: 1% 5%;
+    box-sizing: border-box;
+    max-width: 768px;
+    background-color: #99dff0;
+    margin: 0;
+    font-size: 6rem;
+    background-color: rgba(153, 223, 240, 0.7);
+}
+.footer-left{
+    float: left;
+    width: 38%;
+    padding: 2% 3%;
+    margin:2% 0.8%;
+    border-style: none;
+    background-color:#f66f6f;
+    color: #ffffff;
+    border-radius: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+
+}
+.footer-right{
+    float: right;
+    width: 38%;
+    padding: 2% 3%;
+    margin: 2% 0.8%;
+    border-style: none;
+    background-color:#fbb435;
+    color: #ffffff;
+    border-radius: 1rem;
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: none;
+}
+.victory{
+    width:35.1%;
+    padding: 20.5%;
+    background: url(11.png) no-repeat;
+    margin: auto;
+    background-size:100% 100%;
+}
+.letter{
+    letter-spacing:0.5rem;
+    font-size: 2rem;
+}
+.bigletter{
+    letter-spacing: 1.2rem;
+}

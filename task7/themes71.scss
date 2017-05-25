@@ -1,0 +1,62 @@
+@mixin header-fix($left,$right,$top,$bac,$text-color){
+  position: fixed;
+  left: $left;  top: $top;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+html{font-size:62.5%}
+@media screen and (max-width: 480px) {
+  html {
+    font-size: 40%;
+  }
+}
+body,header,footer{width: 100%;color: #fff}
+body,.container,.name,.number{position: relative;}
+
+.box{
+  background-color:#08C2F6;
+}
+body{
+  min-width: 320px;
+  max-width: 768px;
+  margin:auto;
+  font-size: 3rem;
+}
+header{
+  @include header-fix(0,0,0,#08C2F6,#FFF);
+  height: 10rem;
+  margin: auto;
+  max-width: 768px;
+  z-index: 1000;
+}
+.main-box{
+  margin:18rem 0 17% 0;
+  padding-left: 4%;
+}
+.clear{
+  clear: both;
+}
+.contain{
+  width: 25%;
+  float: left;
+  margin: 0 10% 0 0;
+}
+.contain1{
+  width: 25%;
+  float: left;
+  margin: 0 ;
+}
+.contain:hover .chose{
+  display: block;
+}
+.contain:hover .chose-box{
+  padding: 0;
+}
+.contain1:hover .chose{
+  display: block;
+}
+.contain1:hover .chose-box{
+  padding: 0;
+}

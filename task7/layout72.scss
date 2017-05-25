@@ -1,0 +1,136 @@
+@charset "UTF-8";
+$float:left;
+$marginT:0;
+$marginR:0;
+$marginB:0;
+$marginL:0;
+@mixin pull($float,$marginT,$marginR,$marginB,$marginL){
+  float: $float;
+  margin: $marginT $marginR $marginB $marginL;
+}
+@mixin ab-middle{
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%);
+}
+@mixin chose-item($float){
+  float: $float;
+  width:20%;
+  padding: 10% 0;
+  background-size:cover;
+  margin-right: 6.7%;
+}
+@mixin header-fix($left,$right,$top,$bac,$text-color){
+  position: fixed;
+  left: $left;  top: $top;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+@mixin footer-fix($left,$right,$bottom,$bac,$text-color){
+  position: fixed;
+  left: $left;  bottom: $bottom;  right: $right;
+  background-color: $bac;
+  color: $text-color;
+  text-align: center;
+  vertical-align: middle;
+}
+/*header部分*/
+header{
+  @include header-fix(0,0,0,#08c2f6,#fff);
+  height: 10rem;
+  margin: auto;
+  max-width: 768px;
+  z-index: 1000;
+  border-bottom: solid 1px #fff;
+}
+.pull-left{
+  @include pull(left,0,0,0,2rem);
+}
+.pull-right{
+  @include pull(right,0.2rem,2rem,0,0);
+}
+.pull-center{
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  color: #ffffff;
+  margin: 0;
+}
+/*胜利图标*/
+.victory{
+  width:35.1%;
+  padding: 20.5%;
+  background: url(11.png) no-repeat;
+  margin: auto;
+  background-size:100% 100%;
+  span{
+    font-size: 4rem;
+  }
+}
+.yellow{
+  color: #ffc865;
+  font-size: 3rem;
+  margin-bottom: 5rem;
+}
+/*游戏记录部分*/
+.form-list{
+  margin:0 0 17% 0;
+  padding: 0 0 0 10%;
+  .list-item{
+    border-bottom: solid 1px #8c8c8c;
+    list-style:none;
+    padding-top: 1%;
+    span{
+      float: right;
+      color: #8c8c8c;
+      font-size: 1.5rem;
+      margin: 2% 10%;
+    }
+  }
+}
+/*文字描述部分*/
+.miaoshu{
+  color: #8c8c8c;
+  font-size: 2rem;
+  padding: 2% 0 3% 0;
+  p{
+    margin: 1% 0;
+  }
+}
+.letter{
+  letter-spacing:0.5rem;
+  font-size: 2rem;
+}
+.bigletter{
+  letter-spacing: 1.2rem;
+}
+
+/*footer部分*/
+footer{
+  @include footer-fix(0,0,0,rgba(153, 223, 240, 0.7),#fff);
+  padding: 1% 5%;
+  box-sizing: border-box;
+  max-width: 768px;
+  margin: auto;
+  font-size: 6rem;
+}
+footer a{
+  width: 38%;
+  padding: 2% 3%;
+  margin:2% 0.8%;
+  border-style: none;
+  border-radius: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+.footer-left{
+  float: left;
+  background-color:#f66f6f;
+}
+.footer-right{
+  float: right;
+  background-color:#fbb435;
+}

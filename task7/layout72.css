@@ -1,0 +1,111 @@
+@charset "UTF-8";
+/*header部分*/
+header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #08c2f6;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  height: 10rem;
+  margin: auto;
+  max-width: 768px;
+  z-index: 1000;
+  border-bottom: solid 1px #fff; }
+
+.pull-left {
+  float: left;
+  margin: 0 0 0 2rem; }
+
+.pull-right {
+  float: right;
+  margin: 0.2rem 2rem 0 0; }
+
+.pull-center {
+  text-align: center;
+  padding: 3rem 0 3rem 0;
+  color: #ffffff;
+  margin: 0; }
+
+/*胜利图标*/
+.victory {
+  width: 35.1%;
+  padding: 20.5%;
+  background: url(11.png) no-repeat;
+  margin: auto;
+  background-size: 100% 100%; }
+  .victory span {
+    font-size: 4rem; }
+
+.yellow {
+  color: #ffc865;
+  font-size: 3rem;
+  margin-bottom: 5rem; }
+
+/*游戏记录部分*/
+.form-list {
+  margin: 0 0 17% 0;
+  padding: 0 0 0 10%; }
+  .form-list .list-item {
+    border-bottom: solid 1px #8c8c8c;
+    list-style: none;
+    padding-top: 1%; }
+    .form-list .list-item span {
+      float: right;
+      color: #8c8c8c;
+      font-size: 1.5rem;
+      margin: 2% 10%; }
+
+/*文字描述部分*/
+.miaoshu {
+  color: #8c8c8c;
+  font-size: 2rem;
+  padding: 2% 0 3% 0; }
+  .miaoshu p {
+    margin: 1% 0; }
+
+.letter {
+  letter-spacing: 0.5rem;
+  font-size: 2rem; }
+
+.bigletter {
+  letter-spacing: 1.2rem; }
+
+/*footer部分*/
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(153, 223, 240, 0.7);
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1% 5%;
+  box-sizing: border-box;
+  max-width: 768px;
+  margin: auto;
+  font-size: 6rem; }
+
+footer a {
+  width: 38%;
+  padding: 2% 3%;
+  margin: 2% 0.8%;
+  border-style: none;
+  border-radius: 1rem;
+  font-size: 3rem;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff; }
+
+.footer-left {
+  float: left;
+  background-color: #f66f6f; }
+
+.footer-right {
+  float: right;
+  background-color: #fbb435; }
+
+/*# sourceMappingURL=layout72.css.map */
